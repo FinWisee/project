@@ -38,6 +38,13 @@ nav ul li a {
     font-size: 16px;
 }
 
+.buttons-container {
+    display: flex;
+    align-items: center; /* Alinea verticalmente los elementos */
+    gap: 15px; /* Espacio entre los botones */
+    margin-top: 20px;
+}
+
 .signup-button {
     background-color: white;
     color: #002d59;
@@ -90,8 +97,16 @@ nav ul li a {
 }
 
 .app-buttons img {
-    max-width: 150px;
-    margin-right: 10px;
+    height: 50px; /* Tamaño uniforme para ambos SVG */
+    width: auto; /* Mantén la proporción */
+    display: inline-block; /* Asegura que ambos SVG se comporten como bloques en línea */
+    vertical-align: middle; /* Alinea ambos íconos correctamente */
+}
+
+
+.app-buttons svg {
+    height: 50px; /* Si los elementos son SVG embebidos */
+    width: auto;
 }
 
 .right-content img {
